@@ -1,50 +1,42 @@
-# Host list
-# "name" is mandatory and will be used as target to connect
-# "title" will be displayed as "human name" instead of "name" if specified
-# All defaults values can be overriden per host basis
 hosts:
   - name: "152.67.91.151"
     title: MAIN HTTPS
     port: 443
-    use: ncat
+    use: curl
   - name: "152.67.91.151"
     title: MAIN HTTP
     port: 80
-    use: ncat
+    use: curl
   - name: "152.67.91.74"
     title: SERVER 1 HTTPS
     port: 443
-    use: ncat
+    use: curl
   - name: "152.67.91.74"
     title: SERVER 1 HTTP
     port: 80
-    use: ncat
+    use: curl
   - name: "152.67.89.145"
     title: SERVER 2 HTTPS
     port: 443
-    use: ncat
+    use: curl
   - name: "152.67.89.145"
     title: SERVER 2 HTTP
     port: 80
-    use: ncat
-    
-# Site configuration
+    use: curl
 site:
   # Title
-  title: Downtime
+  title: SERVER STATUS
   # Favicon / logo
-  favicon: https://simon.lecoq.io/src/icon.png
+  favicon: 
   # Refresh rate of status images for client
   refresh_rate_sec: 120
-
-# Default values
 defaults:
   # Default command to use
   # Supported values are :
   # - "curl"   [supports both uptime and response time, but only for HTTP/S requests]
   # - "ncat"   [supports both uptime and response time]
   # - "telnet" [supports only uptime]
-  use: ncat
+  use: curl
   # Default timeout
   timeout: 30
   # Default port
