@@ -3,21 +3,31 @@
 # "title" will be displayed as "human name" instead of "name" if specified
 # All defaults values can be overriden per host basis
 hosts:
-  # Example / test root domain
-  - name: google.com
-    title: Google
-  # Example / test url
-  - name: github.com/lowlighter/downtime
-    title: Downtime repository
-  # Example / test ip with port using ncat
-  - name: "8.8.8.8"
-    title: Google DNS
-    port: 53
+  - name: "152.67.91.151"
+    title: MAIN HTTPS
+    port: 443
     use: ncat
-  # Example / unavailable website
-  - name: unavailable.website.com
-    title: Unavailable website
-
+  - name: "152.67.91.151"
+    title: MAIN HTTP
+    port: 80
+    use: ncat
+  - name: "152.67.91.74"
+    title: SERVER 1 HTTPS
+    port: 443
+    use: ncat
+  - name: "152.67.91.74"
+    title: SERVER 1 HTTP
+    port: 80
+    use: ncat
+  - name: "152.67.89.145"
+    title: SERVER 2 HTTPS
+    port: 443
+    use: ncat
+  - name: "152.67.89.145"
+    title: SERVER 2 HTTP
+    port: 80
+    use: ncat
+    
 # Site configuration
 site:
   # Title
