@@ -21,8 +21,10 @@ See [USAGE.md](/USAGE.md) for more informations.
 ## 🚥 Current status
 
 <!-- <downtime-status> -->
-![Google](/status/google.com-443.svg)
-![Downtime repository](/status/github.com-lowlighter-downtime-443.svg)
-![Google DNS](/status/8.8.8.8-53.svg)
-![Unavailable website](/status/unavailable.website.com-443.svg)
+![MAIN HTTPS](/status/152.67.91.151-443.svg)
+![MAIN HTTP](/status/152.67.91.151-80.svg)
+![SERVER 1 HTTPS](/status/152.67.91.74-443.svg)
+![SERVER 1 HTTP](/status/152.67.91.74-80.svg)
+![SERVER 2 HTTPS](/status/152.67.89.145-443.svg)
+![SERVER 2 HTTP](/status/152.67.89.145-80.svg)
 <!-- <downtime-status/> -->
