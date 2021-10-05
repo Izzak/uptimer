@@ -6,27 +6,27 @@ hosts:
   - name: "152.67.91.151"
     title: MAIN HTTPS
     port: 443
-    use: curl
+    use: ncat
   - name: "152.67.91.151"
     title: MAIN HTTP
     port: 80
-    use: curl
+    use: ncat
   - name: "152.67.91.74"
     title: SERVER 1 HTTPS
     port: 443
-    use: curl
+    use: ncat
   - name: "152.67.91.74"
     title: SERVER 1 HTTP
     port: 80
-    use: curl
+    use: ncat
   - name: "152.67.89.145"
     title: SERVER 2 HTTPS
     port: 443
-    use: curl
+    use: ncat
   - name: "152.67.89.145"
     title: SERVER 2 HTTP
     port: 80
-    use: curl
+    use: ncat
     
 # Site configuration
 site:
@@ -44,7 +44,7 @@ defaults:
   # - "curl"   [supports both uptime and response time, but only for HTTP/S requests]
   # - "ncat"   [supports both uptime and response time]
   # - "telnet" [supports only uptime]
-  use: curl
+  use: ncat
   # Default timeout
   timeout: 30
   # Default port
