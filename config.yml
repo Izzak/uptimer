@@ -2,27 +2,27 @@ hosts:
   - name: "152.67.91.151"
     title: MAIN HTTPS
     port: 443
-    use: curl
+    use: telnet
   - name: "152.67.91.151"
     title: MAIN HTTP
     port: 80
-    use: curl
+    use: telnet
   - name: "152.67.91.74"
     title: SERVER 1 HTTPS
     port: 443
-    use: curl
+    use: telnet
   - name: "152.67.91.74"
     title: SERVER 1 HTTP
     port: 80
-    use: curl
+    use: telnet
   - name: "152.67.89.145"
     title: SERVER 2 HTTPS
     port: 443
-    use: curl
+    use: telnet
   - name: "152.67.89.145"
     title: SERVER 2 HTTP
     port: 80
-    use: curl
+    use: telnet
 site:
   # Title
   title: SERVER STATUS
